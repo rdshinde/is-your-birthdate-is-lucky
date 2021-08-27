@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 
-    <title>Lucky Birthday Checker</title>
-</head>
-<body>
-    
+    <title>Lucky Birthdate Checker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Is Your Birthdate 🎂 Lucky? 🧐 </h1>
+    </header>
+    <main>
+      <div class="dob">
+        <label for="date">Enter your date of birth. 📆</label>
+        <input id="date-of-birth"  type="date" />
+      </div>
+      <div class="lucky-num">
+        <label for="lucky-number">Enter your lucky number. 😊</label>
+        <input
+          type="number"
+          id="lucky-number"
+          placeholder="Enter your lucky number here."
+        />
+      </div>
+      <div class="check">
+        <button id="check-btn">Check</button>
+      </div>
 
+      <div class="result"></div>
+    </main>
+<div class="privacy"><br><small>We do not store any kind of data of yours.</small>
+
+</div>
+    <!-- Footer Starts Here -->
+    <footer class="footer">
+      <a href="#">Rishikesh Shinde</a><br />
+      <!-- Social Media Icons  -->
+      <span class="social-media">
+        <a
+          href="https://github.com/rdshinde"
+          target="_blank"
+          name="Rishikesh Shinde Github Profile"
+        >
+          <img
+            style="display: inline; margin: 0 5px"
+            src="/assets/github.svg"
+            alt="github-link"
+            height="50px"
+            width="50"
+          />
+        </a>
+        <a
+          name="Rishikesh Shinde Linkedin Profile"
+          href="https://www.linkedin.com/in/rishikesh-shinde-1211b5192"
+          target="_blank"
+        >
+          <img
+            style="display: inline; margin: 0 5px"
+            src="/assets/linkedin.svg"
+            alt="linkedin-link"
+            height="50px"
+            width="50"
+        /></a>
+      </span>
+    </footer>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

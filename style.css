@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1687a7;
+    --secondary: #276678;
+    --primary-light: #d3e0ea;
+    --primary-dark: #03506f;
+    --background: #f4f9f9;
+    --width-break: 800px;
+  }
+
+body{
+    color: white;
+    text-align: center;
+    font-family: "Aclonica",sans-serif;
+    padding: 1rem;
+    font-size: 22px;
+    background-image: linear-gradient(var(--primary-dark),var(--primary));
+    background-repeat: no-repeat;
+    
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    padding: 1rem;
+}
+h1{
+    font-size: 3rem;
+    
+    padding: 1rem;
+}
+label{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--background);
+}
+input{
+    font-family: "Aclonica",sans-serif;
+    padding: 1rem;
+    outline: none;
+    width: 50vh;
+    border: 2px solid var(--secondary);
+    border-radius: 1rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#date-of-birth{
+    padding: 0.8rem;
+    cursor: pointer;
+}
+button{
+    font-family: "Aclonica",sans-serif;
+    cursor: pointer;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: large;
+    border: 2px solid;
+    border-radius: 0.3rem;
+    color: var(--primary-dark);
+    background-color:white;
+    transition: 0.9s;
+}
+
+button:hover{
+    color: var(--background);
+    background-color: var(--primary-dark);
+    transition: 0.9s;
+}
+
+.privacy{
+    text-align: center;
+    color: var(--primary-dark);
+    font-family: sans-serif;
+    height: 77px;
+    margin:7px auto;
+    border-radius: 15px;
+    background-image: linear-gradient(var(--primary-light),white);
+}
+footer{
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+   
+    
+}
+.hidden{
+    display: none;
+}
+.result{
+    font-size: 2rem;
+}
+@media (max-width:420px){
+    h1{
+        font-size: 2.7rem;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    input{
+        width: 40vh;
+    }
+}
