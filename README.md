@@ -3,7 +3,7 @@ Do you have lucky birthdate? This app will tell you, how lucky your birthdate is
 
 >### Tech Stack.
 
-Built with HTML, CSS and Vanilla JS.
+Built with `HTML`, `CSS` and `Vanilla JS`.
 
 >### Live Project.
 
