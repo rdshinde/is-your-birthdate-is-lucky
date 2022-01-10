@@ -7,7 +7,7 @@ const resultDiv = document.querySelector(".result");
 checkBtn.addEventListener("click", checkBtnHandler);
 
 // function to calculate sum of digits in a number.
-function getSum(num){
+const getSum = num => {
     let sum = 0;
     while (num != 0) {
         sum = sum + Math.trunc(num % 10);
@@ -16,11 +16,11 @@ function getSum(num){
     return sum;
 }
 
-function message(msg){
+const message = msg =>{
     resultDiv.innerText = msg;
 }
 
-function messageDefiner(sum,num){
+const messageDefiner = (sum,num) => {
     
     if(sum%num === 0){
         message("WOW! You got lucky birthdate.🤩 🎉 🥳")
@@ -31,7 +31,7 @@ function messageDefiner(sum,num){
     }
 }
 
-function checkBtnHandler() {
+const checkBtnHandler = () => {
   dob = dateOfBirth.value;
   dob = parseInt(dob.replaceAll("-", ""));
   numSum = getSum(dob);
@@ -40,8 +40,8 @@ function checkBtnHandler() {
 
 }
 
-function displayBanner() {
-  setTimeout(function () {
+const displayBanner = () => {
+  setTimeout( () => {
     document.querySelector(".privacy").classList.add("hidden");
   }, 3000);
 }
